@@ -4,3 +4,37 @@
     box-sizing: border-box;
     font-family: "roboto", Helvetica, sans-serif;
 }
+
+body {
+    background-color: #f4f4f4;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #0ab3a3 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #0ab3a3 !important;
+}
+
+.swiper-pagination-bullet {
+    width: 30px !important;
+    border-radius: 50px !important;
+}
+
+.heading-lines {
+    width: fit-content;
+    position: relative;
+}
+
+.heading-lines::after {
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    translate: -50%;
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: white;
+}

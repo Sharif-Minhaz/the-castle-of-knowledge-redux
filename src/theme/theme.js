@@ -1,14 +1,9 @@
-import { purple } from "@mui/material/colors";
 import { createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
-	status: {
-		danger: "#e53e3e",
-	},
 	palette: {
 		primary: {
-			// Purple and green play nicely together.
-			main: purple[500],
+			main: "#0ab3a3",
 		},
 		secondary: {
 			// This is green.A700 as hex.
@@ -18,7 +13,7 @@ const theme = createTheme({
 			main: "#64748B",
 			contrastText: "#fff",
 		},
-	},
+	}
 });
 
 export default theme;
