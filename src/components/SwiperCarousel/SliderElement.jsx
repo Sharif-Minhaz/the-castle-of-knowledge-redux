@@ -12,6 +12,10 @@ const SliderElement = ({ data, alignment }) => {
 				height: "calc(100vh - 150px)",
 				minHeight: "470px",
 				borderRadius: "10px",
+				cursor: "grab",
+				"&:active": {
+					cursor: "grabbing"
+				}
 			}}
 		>
 			<Stack
@@ -30,7 +34,7 @@ const SliderElement = ({ data, alignment }) => {
 					{data.description}
 				</Typography>
 				<Button
-					sx={{ color: "white", width: 130 }}
+					sx={{ color: "white", width: 130, borderRadius: "20px", py: "8px" }}
 					variant="contained"
 					endIcon={<ShoppingCartCheckoutIcon />}
 				>

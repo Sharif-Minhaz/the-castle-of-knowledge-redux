@@ -36,20 +36,19 @@ const sliderData = [
 const SwiperCarousel = () => {
 	return (
 		<Swiper
-			// install Swiper modules
 			modules={[Navigation, Pagination, Autoplay, EffectFade]}
 			effect={"fade"}
 			slidesPerView={1}
 			navigation
 			pagination={{ clickable: true }}
-			// autoplay
+			autoplay
 			loop={true}
 			className="mySwiper"
 		>
 			{sliderData.map((slideData, i) => (
 				<SwiperSlide key={slideData.smHeading}>
 					<SliderElement
-						alignment={i === 0 ? "left" : i === 1 ? "center" : "right"}
+						alignment={i === 0 ? "start" : i === 1 ? "center" : "end"}
 						data={slideData}
 					/>
 				</SwiperSlide>
